@@ -1,0 +1,125 @@
+:root {
+  --primary-gradient: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+  --admin-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  --success-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03);
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Premium Buttons */
+.btn-primary-custom {
+  background: var(--primary-gradient);
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  font-weight: 500;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.35);
+  color: white;
+}
+
+.btn-primary-custom:active {
+  transform: translateY(0);
+}
+
+.btn-admin-custom {
+  background: var(--admin-gradient);
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  font-weight: 500;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-admin-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(15, 23, 42, 0.35);
+  color: white;
+}
+
+/* Glassmorphism Card Style */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  padding: 30px;
+}
+
+/* Page wrapper for full-centered logins */
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 15px;
+  flex-grow: 1;
+}
+
+/* Navbar Customization */
+.navbar-custom {
+  background: white;
+  box-shadow: var(--shadow-sm);
+  padding: 15px 0;
+}
+
+.navbar-brand-custom {
+  font-weight: 700;
+  font-size: 1.4rem;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Form Styling */
+.form-control-custom {
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  transition: all 0.2s ease;
+}
+
+.form-control-custom:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Responsive Grid and Cards */
+.card-hover-effect {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg) !important;
+}
